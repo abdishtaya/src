@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+  {% load static   %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="{% static '/admin/css/bootstrap.min.css' %}" />
+<link rel="stylesheet" href="{% static '/admin/css/bootstrap-responsive.min.css' %}" />
+<link rel="stylesheet" href="{% static '/admin/css/uniform.css' %}" />
+<link rel="stylesheet" href="{% static '/admin/css/select2.css' %}" />
+<link rel="stylesheet" href="{% static '/admin/css/matrix-style.css' %}" />
+<link rel="stylesheet" href="{% static '/admin/css/matrix-media.css' %}" />
+<link href="{% static '/admin/font-awesome/css/font-awesome.css' %}" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="{% static '/bootsweet/dist/sweetalert.css' %}">
+
+
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Matrix Admin</a></h1>
+</div>
+<!--close-Header-part-->
+
+
+
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
+  <ul>
+
+
+    <li ><a href="Customers"><i class="icon icon-th"></i> <span>Customers</span></a></li>
+      <li ><a href="Services"><i class="icon icon-th"></i> <span>Services</span></a></li>
+       <li><a href="logout"><i class="icon icon-home"></i> <span>log out</span></a> </li>
+
+
+
+
+
+  </ul>
+</div>
+
+
+
+
+
+         {% block content %}
+            {% endblock %}
+
+
+
+
+
+<!--Footer-part-->
+
+<!--end-Footer-part-->
+
+<script src="{% static '/admin/js/jquery.min.js' %}"></script>
+<script src="{% static '/admin/js/jquery.ui.custom.js' %}"></script>
+<script src="{% static '/admin/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/admin/js/jquery.uniform.js' %}"></script>
+<script src="{% static '/admin/js/select2.min.js' %}"></script>
+<script src="{% static '/admin/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static '/admin/js/matrix.js' %}"></script>
+<script src="{% static '/admin/js/matrix.tables.js' %}"></script>
+<script src="{% static '/admin/js/jquery.validate.js' %}"></script>
+<script src="{% static '/admin/js/matrix.js' %}"></script>
+<script src="{% static '/admin/js/matrix.form_validation.js' %}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="{% static '/bootsweet/dist/sweetalert.js' %}"></script>
+</body>
+</html>

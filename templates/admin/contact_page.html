@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+<form method="POST">
+    {% csrf_token %}
+  {{ form }}
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<!--
+<form action="" method="POST">
+    {% csrf_token %}
+  First name:<br>
+  <input type="text" name="firstname" value="abd">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="ishtaya">
+  <br><br>
+  email:<br>
+  <input type="text" name="email" value="abd.ishtaya@yahoo.com">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>--!>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
